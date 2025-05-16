@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y venta de entradas</title>
+    <head>
+        <link rel="stylesheet" href="../CSS/styles.css">
+    </head>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../img/Escudoriver.png" alt="Logo" id="Logo">
+        </a>
+        <h1>Club atletico <span>River plate</span></h1>
+        <nav>
+            <ul class="lista">
+                <li>
+                    <a href="historia.html">Historia del club</a>
+                </li>
+                <li>
+                    <a href="fixture.html">Proximos partidos</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galeria</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contacto y venta de entradas</h2>
+        <section>
+            <h3>¿Como sacar entradas para ver a river plate?</h3>
+            <ol>
+                <li>Necesitas registrarte en <a href="https://login.riverid.com.ar/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dmiportal%26redirect_uri%3Dhttps%253A%252F%252Fwww.riverid.com.ar%252Fsignin-oidc%26response_type%3Dcode%26scope%3Dopenid%2520profile%26code_challenge%3DYiWh7bWnkqS7tOPOAzVKiD72VYb0Qn6e2qymMGn5TTI%26code_challenge_method%3DS256%26response_mode%3Dform_post%26nonce%3D638806271211410275.ZGIzOWIyNjUtNGQ2NC00MTA4LTgyYjEtZDYwODk4M2Y5N2QyMDhjMGExOWUtNWZiZC00YzIwLThkNzctMjQ5ZWJmMTdkZjNl%26state%3DCfDJ8OQr0DR3RG5LoIcEJatuHhMqouhId96ebwtfCpfq0NNmSsP7w0gEh7qYkRcyPasG8J9Pn7CIMe-3wocUp84K7HUjVNJo44FbhDG5NTMZtXGKHktQBue2CeglMrS9Zch0NPVtLb_tSm6IAB0gEic5X499oGhJtggCptX2AplFpoweDRoE50fGAUMUFa0wkn2_PzJfcNptnqPImt9W7tYh06gmF8yo7hPsf4_9Wd0kiBAnP01wwl3B1FDfnxehQjgMu_O1AYmJ2anMRAd8Jst3Z91ELUSJiPEO5OL4juM6N3Ij2cxqtoPWF3RMW3G1q_4BhPP2S31Mop_JJoKaUiDfgFZTD2lHqt9NuvkXxsIYxOkyyD2WYpKEjFf6IHXM11qbWQ%26x-client-SKU%3DID_NET9_0%26x-client-ver%3D8.0.1.0" id="riverid" target="_blank">River ID</a>, la plataforma oficial del club</li>
+                <li>Para acceder a las entradas debes ser socio o miembro de somos river. Eso se puede realizar en la misma web donde se consiguen los tickets</li>
+                <li>Las entradas se consiguen exclusivamente en River ID, No compres en otro lugar!</li>
+                <li>El club anuncia por redes y web oficial cuándo se habilita la venta para cada partido. Generalmente, los socios tienen prioridad, luego Somos River y por ultimo, los no socios, en caso de haber remanente</li>
+                <li>Una vez comprada, la entrada, queda cargada en tu carnet unico. En caso de no tenerlo, podes seleccionar opción "Ingresar con DNI" dentro de la misma web</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3169282834388!2d-58.452248124460944!3d-34.545530172975255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20Monumental!5e0!3m2!1ses!2sar!4v1745030776868!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section>
+            <h3>Contacto</h3>
+            <form>
+                <p id="datos">Datos personales</p>
+                <label for="nombre" class="subtitulo"> Nombre completo: </label> <br>
+                <input id="nombre" type="text" name="datos1"><br>
+                <label for="mail" class="subtitulo"> Mail: </label><br>
+                <input id="mail" type="text" name="datos2"><br>
+                <label for="celular" class="subtitulo"> Numero de celular: </label><br>
+                <input id="celular" type="tel" name="datos3"><br>
+                <label for="nacimiento" class="subtitulo">Fecha de nacimiento:</label><br>
+                <input type="date" id="nacimiento" name="datos4"><br>
+                <label for="celular" class="subtitulo"> Numero de socio: </label><br>
+                <input id="celular" type="number" name="datos5"><br>
+                <p>Si no lo es, desestime el casillero anterior</p>
+                <p class="subtitulo">A continuación deje su consulta!:</p>
+                <textarea id="consulta" name="consulta" rows="10" cols="66">
+                    Escribí tu consulta acá....
+                </textarea><br>
+                <input type="submit" value="enviar" id="botonEnviar">                                
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <h5>Derechos Reservados</h5>
+        <a href="https://www.facebook.com/riverplateoficial/?locale=es_LA">
+            <img src="../img/Logofacebook.png" alt="Facebook" class="redes" target="_blank">
+        </a>
+        <a href="https://www.instagram.com/riverplate/?hl=es">
+            <img src="../img/Logoinstagram.png" alt="Instagram" class="redes" target="_blank">
+        </a>
+        <a href="https://x.com/RiverPlate?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <img src="../img/Logox.png" alt="X" class="redes" target="_blank">
+        </a>       
+
+    </footer>
+</body>
+</html>
