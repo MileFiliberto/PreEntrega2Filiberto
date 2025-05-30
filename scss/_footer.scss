@@ -1,0 +1,24 @@
+.footer, .footer2, .footer3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    &.footer {
+        grid-column: 1 / 4;
+        grid-row: 10 / 11;
+        @include flex-center(row, space-between, center);
+        padding: 1rem 2rem;
+    }
+
+    &.footer-redes {
+        @include flex-center(row, flex-start, center, 1rem);    
+        margin-right: 1rem;
+    }
+}
+
+.redes {
+        height: 5vh;
+        width: 5vh;
+    }
+

@@ -1,0 +1,17 @@
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#monumental {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}

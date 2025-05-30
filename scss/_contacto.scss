@@ -1,0 +1,42 @@
+.header3 {
+    grid-area: header;
+}
+
+.footer3 {
+    grid-area: footer;
+}
+
+#riverid {
+    text-decoration: none;
+    color: $color-principal;
+}
+
+.subtitulo {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: $color-principal;
+}
+
+#datos {
+    font-size: 1.3em;
+    color: $color-principal;
+}
+
+.ubicacion {
+    grid-area: ubicacion;
+    text-align: center;
+}
+
+.contacto {
+    grid-area: contacto;
+    text-align: center;
+}
+
+
+.entradas {
+    grid-area: entradas;
+}
+
+.titulocontacto {
+    grid-area: titulocontacto;
+}

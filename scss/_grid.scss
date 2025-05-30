@@ -1,0 +1,42 @@
+.body1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.body2 {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main2"
+        "footer";
+}
+
+.body3 {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main3"
+        "footer";
+}
+
+.fixture-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .lista {
+        flex: 1;
+    }
+
+    .calendario {
+        width: 50%;
+        height: auto;
+    }
+}

@@ -1,0 +1,15 @@
+nav {
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: $color-texto;
+            }
+        }
+    } 
+    
+}
+
+.naveg {
+    @include flex-center(row, center, center, 3rem);
+}

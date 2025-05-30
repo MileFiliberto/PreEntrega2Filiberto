@@ -1,0 +1,37 @@
+
+html {
+    font-size: 18px;
+    font-family: $font-principal;
+    text-align: justify;
+    line-height: 1.3;
+}
+
+h1 {
+    text-align: center;
+    color: $color-secundario;
+    background-color: $color-principal;
+    font-size: 50px;
+}
+
+h2 {
+    @extend %titulo-style;
+    font-size: 1.8em;
+}
+
+h3 {
+    @extend %titulo-style;
+    font-size: 1.5em;
+    text-decoration: underline overline;
+    text-decoration-color: $color-principal;
+}
+
+h4 {
+    font-size: 1.1em;
+    text-decoration: underline;
+    text-decoration-color: $color-principal;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+}

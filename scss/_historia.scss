@@ -1,0 +1,44 @@
+.trofeos {
+    width: 200px;
+    height: auto;
+}
+
+.estadio {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+}
+
+.fotosestadio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.imgfundacion {
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.titulohistoria {
+    grid-area: titulohistoria;
+}
+
+.fundacion {
+    grid-area: fundacion;
+    text-align: center;
+}
+
+.trofeosr {
+    grid-area: trofeosr;
+    text-align: center;
+}
+
+.evolucionestadio {
+    grid-area: evolucionestadio;
+}

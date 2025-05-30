@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proximos partidos</title>
-    <head>
-        <link rel="stylesheet" href="../CSS/styles.css">
-    </head>
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <header>
-        <a href="../index.html">
-            <img src="../img/Escudoriver.png" alt="Logo" id="Logo">
-        </a>
-        <h1>Club atletico <span>River plate</span></h1>
+        <section class="encabezado">
+            <div class="cube">
+                <a href="../index.html">
+                    <img src="../img/Escudoriver.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <h1>Club atletico <span>River plate</span></h1>
+        </section>
         <nav>
-            <ul class="lista">
+            <ul class="lista naveg">
                 <li>
                     <a href="historia.html">Historia del club</a>
                 </li>
@@ -33,30 +35,34 @@
         <h2>Fixture</h2>
         <section>
             <h3>Proximos partidos:</h3>
-            <ul class="lista">
-                <li>Independiente del valle vs <span>RIVER PLATE</span>: Martes 23-4 21:30hs.</li>
-                <li><span>RIVER PLATE</span> vs Boca Juniors: Domingo 27-4 15:30hs.</li>
-                <li><span>RIVER PLATE</span> vs Vélez: A confirmar</li>
-                <li>Barcelona SC vs <span>RIVER PLATE</span>: Martes 8-5 21:30hs.</li>
-                <li><span>RIVER PLATE</span> vs Independiente del valle: 15-5 21:30hs.</li>
-            </ul>
+            <div class="fixture-contenedor">
+                <ul class="lista">
+                    <li><span>RIVER PLATE</span> vs Veléz: Domingo 4-5 20:30hs.</li>
+                    <li>Barcelona SC vs <span>RIVER PLATE</span>: Martes 8-5 21:30hs.</li>
+                    <li><span>RIVER PLATE</span> vs Barracas central: Lunes 12-5 20:30hs.</li>
+                    <li><span>RIVER PLATE</span> vs Independiente del valle: Jueves 15-5 21:30hs.</li>        
+                    <li><span>RIVER PLATE</span> vs Platense: Martes 20-5 20:30</li>
+                    <li><span>RIVER PLATE</span> vs Universitario: Martes 27-5 21:30</li>
+                </ul>
             <!--No se como agregar un calendario y en su lugar puse una foto para reemplazarlo luego-->
-            <img src="../img/Calendario.webp" alt="Calendario"> 
+                <img src="../img/calendarioescudo.png" alt="Calendario" class="calendario"> 
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <h5>Derechos Reservados</h5>
-        <a href="https://www.facebook.com/riverplateoficial/?locale=es_LA">
-            <img src="../img/Logofacebook.png" alt="Facebook" class="redes" target="_blank">
-        </a>
-        <a href="https://www.instagram.com/riverplate/?hl=es">
-            <img src="../img/Logoinstagram.png" alt="Instagram" class="redes" target="_blank">
-        </a>
-        <a href="https://x.com/RiverPlate?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-            <img src="../img/Logox.png" alt="X" class="redes" target="_blank">      
-        </a>
-
+        <div class="footer-redes">
+            <a href="https://www.facebook.com/riverplateoficial/?locale=es_LA">
+                <img src="../img/Logofacebook.png" alt="Facebook" class="redes" target="_blank">
+            </a>
+            <a href="https://www.instagram.com/riverplate/?hl=es">
+                <img src="../img/Logoinstagram.png" alt="Instagram" class="redes" target="_blank">
+            </a>
+            <a href="https://x.com/RiverPlate?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                <img src="../img/Logox.png" alt="X" class="redes" target="_blank">      
+            </a>
+        </div>
     </footer>
 </body>
 </html>

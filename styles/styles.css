@@ -1,0 +1,445 @@
+html {
+  font-size: 18px;
+  font-family: "Calibri", "Arial", sans-serif;
+  text-align: justify;
+  line-height: 1.3;
+}
+
+h1 {
+  text-align: center;
+  color: #EAE4DD;
+  background-color: #e12b2b;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-decoration: underline overline;
+  text-decoration-color: #e12b2b;
+}
+
+h4 {
+  font-size: 1.1em;
+  text-decoration: underline;
+  text-decoration-color: #e12b2b;
+}
+
+span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+h2, h3 {
+  color: #e12b2b;
+  text-align: center;
+}
+
+#botonEnviar {
+  color: #fff5e6;
+  background-color: #e12b2b;
+  width: 50%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.carousel {
+  max-width: 50%;
+  height: 400px;
+  margin: 0 auto 2rem auto;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  align-items: center;
+  height: 100px;
+}
+
+.cube {
+  background-color: #e12b2b;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 5s infinite linear;
+}
+
+@keyframes rotateCube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(0) rotateY(360deg);
+  }
+}
+.lista {
+  list-style-image: url(../img/pelotafutbol.png);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.naveg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.body1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.body2 {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main2" "footer";
+}
+
+.body3 {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main3" "footer";
+}
+
+.fixture-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.fixture-contenedor .lista {
+  flex: 1;
+}
+.fixture-contenedor .calendario {
+  width: 50%;
+  height: auto;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#monumental {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+header {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.footer, .footer2, .footer3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.footer.footer, .footer2.footer, .footer3.footer {
+  grid-column: 1/4;
+  grid-row: 10/11;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  padding: 1rem 2rem;
+}
+.footer.footer-redes, .footer2.footer-redes, .footer3.footer-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.redes {
+  height: 5vh;
+  width: 5vh;
+}
+
+.main {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "intro intro intro intro" "intro intro intro intro" "momentos momentos frases frases" "momentos momentos frases frases";
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.main2 {
+  grid-area: main2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "titulohistoria titulohistoria" "fundacion trofeosr" "evolucionestadio evolucionestadio";
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.main3 {
+  grid-area: main3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "titulocontacto titulocontacto" "entradas ubicacion" "contacto contacto";
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.momentos {
+  grid-area: momentos;
+  margin: 20px;
+}
+
+.frases {
+  grid-area: frases;
+  margin: 20px;
+}
+
+.trofeos {
+  width: 200px;
+  height: auto;
+}
+
+.estadio {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+}
+
+.fotosestadio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.imgfundacion {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.titulohistoria {
+  grid-area: titulohistoria;
+}
+
+.fundacion {
+  grid-area: fundacion;
+  text-align: center;
+}
+
+.trofeosr {
+  grid-area: trofeosr;
+  text-align: center;
+}
+
+.evolucionestadio {
+  grid-area: evolucionestadio;
+}
+
+.galeria {
+  width: 750px;
+  height: auto;
+}
+
+.header3 {
+  grid-area: header;
+}
+
+.footer3 {
+  grid-area: footer;
+}
+
+#riverid {
+  text-decoration: none;
+  color: #e12b2b;
+}
+
+.subtitulo {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #e12b2b;
+}
+
+#datos {
+  font-size: 1.3em;
+  color: #e12b2b;
+}
+
+.ubicacion {
+  grid-area: ubicacion;
+  text-align: center;
+}
+
+.contacto {
+  grid-area: contacto;
+  text-align: center;
+}
+
+.entradas {
+  grid-area: entradas;
+}
+
+.titulocontacto {
+  grid-area: titulocontacto;
+}
+
+.calendario {
+  width: 750px;
+  height: auto;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .body1 {
+    grid-template-columns: 1;
+    grid-template-rows: auto auto auto;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "intro" "momentos" "frases";
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .carousel {
+    max-width: 85%;
+    height: auto;
+  }
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  #Logo {
+    height: 80px;
+  }
+  h1 {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .lista.naveg {
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 0;
+    align-items: center;
+  }
+  .item {
+    margin: 0 1rem;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .body2 {
+    grid-template-rows: auto auto auto;
+  }
+  .main2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "titulohistoria" "fundacion" "trofeosr" "evolucionestadio";
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .imgfundacion, .trofeos, .estadio {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .fotosestadio {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+  }
+  .footer2 {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footer-redes {
+    justify-content: center;
+  }
+  .fixture-contenedor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .fixture-contenedor .lista {
+    width: 100%;
+  }
+  .fixture-contenedor .calendario {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  .main3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "titulocontacto" "entradas" "ubicacion" "contacto";
+    padding: 1rem;
+  }
+  from {
+    width: 100%;
+  }
+  input[type=text],
+  input[type=tel],
+  input[type=number],
+  input[type=date],
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  #botonEnviar {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

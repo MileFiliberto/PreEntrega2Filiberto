@@ -1,0 +1,40 @@
+.main {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "intro intro intro intro"
+        "intro intro intro intro"
+        "momentos momentos frases frases"
+        "momentos momentos frases frases";
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.main2 {
+    grid-area: main2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "titulohistoria titulohistoria"
+        "fundacion trofeosr"
+        "evolucionestadio evolucionestadio";
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.main3 {
+    grid-area: main3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "titulocontacto titulocontacto"
+        "entradas ubicacion"
+        "contacto contacto";
+    gap: 1.5rem;
+    padding: 1rem;
+}
